@@ -1,8 +1,8 @@
-package me;
+// Manoj Kumar Vemuri ID 2022213
 
 public class Book {
   // declaring attributes
-  String bookName;
+  String name;
   int cost;
   String author;
   String genre;
@@ -11,22 +11,20 @@ public class Book {
     super();
   }
 
-  // parameterised constructor to set values
-  public Book(String bookName, int cost, String author, String genre) {
+ 
+  public Book(String name, int cost, String author, String genre) {
     super();
-    this.bookName = bookName;
+    this.name = name;
     this.cost = cost;
     this.author = author;
     this.genre = genre;
   }
-
-  // accessor and mutators for book attribute
-  public String getBookName() {
-    return bookName;
+  public String getname() {
+    return name;
   }
 
-  public void setBookName(String bookName) {
-    this.bookName = bookName;
+  public void setname(String name) {
+    this.name = name;
   }
 
   public int getcost() {
@@ -58,6 +56,6 @@ public class Book {
 
   @Override
   public String toString() {
-    return "Book [bookName=" + bookName + ", cost=" + cost + ", author=" + author + ", genre=" + genre + "]";
+    return "Book [name=" + name + ", cost=" + cost + ", author=" + author + ", genre=" + genre + "]";
   }
 }

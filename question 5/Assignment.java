@@ -5,18 +5,17 @@
 public class Assignment{
 
   private double mark;
-
-  public double getmark(){
+  double mark=-1;
+Assignment(){}
+  public double getmark throws NotYetSetException(){
+    if (mark==-1){
+      throw new NotYetSetException("Mark is not yet set.")
+    }
     
     return mark;
   }
   
-  public void setmark(Double mark){
-    this.mark=mark;
-  }
-  @Override
-  public String toString(){
-    return "Assignment[mark"+mark+"]";
-  }
+  public void setmark(int m){
+    this.mark=m;
   }
 

@@ -4,28 +4,47 @@
 import java.util.Vector;
 import java.util.Enumeration;
 
-public class CourseRecord{
+public class CourseRecord {
   private Student student;
   private Vector assignments;
-  CourseRecord(){assignments=new Vector<>();}
-  public Student getStudent(){
-    return student;
-  }
-  
-  public void setStudent(Student s){
-    student=s;
+
+  CourseRecord() {
+    assignments = new Vector<>();
   }
 
-  public void addAssignments(Assignment a){
+  public Student getStudent() {
+    return student;
+  }
+
+  public void setStudent(Student s) {
+    student = s;
+  }
+
+  public void addAssignments(Assignment a) {
     assignments.addElement(a);
   }
 
-  public Enumeration getAssignments(){
+  public Enumeration getAssignments() {
     return assignments.elements();
   }
 
-  public double average(){};
+  Int marks, numassi, total;
+  int numassi = assignments.size();
 
-  boolean canTakeFinalExam();
+  public double average() {
+    Iterator marks = vector.assignments();
+    total = total + marks;
+    average = total / numassi;
+  };
+
+  public boolean canTakeFinalExam(numassi){
+  
+   if (numassi>=){
+     return true;
+   }
+  else{
+   return false
+   }
+  }
 
 }

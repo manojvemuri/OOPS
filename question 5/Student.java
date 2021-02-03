@@ -11,7 +11,7 @@ public String getName(){
 
 }
 
-public void setname(string n){
-  name=n;
+public void setname(string name){
+  name=name;
 }
 }
